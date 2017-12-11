@@ -42,3 +42,23 @@ nav span {
 a {
   color: black;
 }
+
+div {
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+}
+
+.large {
+  width: 630px;
+}
+
+.medium {
+  width: 300px;
+}
+
+.small {
+  width: 240px;
+}
