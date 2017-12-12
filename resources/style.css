@@ -49,6 +49,8 @@ div {
 
 .content {
   display: flex;
+  position: absolute;
+  margin: 80px 0px;
 }
 
 .large {
@@ -61,4 +63,52 @@ div {
 
 .small {
   width: 240px;
+}
+
+.lead-story .img-content {
+  background-image:url("img/img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.img-content {
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
+}
+
+.fall-cancelled-image-content {
+  background-image:url("img/img-story-2.png");
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.pop-culture-image-content {
+  background-image:url("img/img-story-3.png");
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.cat-ceo-image-content {
+  background-image:url("img/img-story-1.png");
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
