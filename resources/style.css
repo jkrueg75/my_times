@@ -39,21 +39,38 @@ nav span {
   padding: 20px 10px;
 }
 
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
 a {
   color: black;
 }
 
 div {
-  border: 1px solid black;
+  display: block;
+}
+
+p {
+  display: block;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
-  flex-flow: nowrap;
   width: 1232px;
   margin: 0 auto 78px auto;
   padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .large {
@@ -84,9 +101,14 @@ div {
   color: DimGray;
 }
 
-.lead-story .img-content, span, .narrative {
+.img-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  color: white;
 }
 
 .lead-story .img-content {
@@ -97,11 +119,12 @@ div {
   text-align: left;
 }
 
-.img-content {
-  height: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  color: white;
+.lead-story .img-content span {
+  margin-left: 20px;
+}
+
+.narrative {
+  margin-top: 16px;
 }
 
 .fall-cancelled-image-content {
@@ -141,6 +164,16 @@ div {
   display: flex;
   justify-content: space-between;
   margin-top: 17px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.stories .text-content {
+  height: 250px;
 }
 
 footer {
