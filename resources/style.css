@@ -12,10 +12,6 @@ header {
   font-weight: bold;
 }
 
-header nav {
-  padding-right: 40px;
-}
-
 .logo {
   display: flex;
   align-items: center;
@@ -29,14 +25,61 @@ header nav {
   margin-right: 12px;
 }
 
-.logo p {
+.logo span {
   color: MediumAquamarine;
 }
 
-nav span {
-  display: inline-flex;
-  justify-content: flex-end;
-  padding: 20px 10px;
+header nav {
+  padding-right: 40px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+  background-image: url("img/img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+
+.lead-story .image-content span {
+  margin-left: 20px;
+}
+
+.narrative {
+  margin-top: 16px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+div {
+  display: block;
 }
 
 h2 {
@@ -48,18 +91,6 @@ h2 {
   font-style: normal;
 }
 
-a {
-  color: black;
-}
-
-div {
-  display: block;
-}
-
-p {
-  display: block;
-}
-
 .content {
   display: flex;
   width: 1232px;
@@ -67,126 +98,80 @@ p {
   padding-top: 116px;
 }
 
+.column.large {
+  width: 630px;
+}
+
 .column {
   display: flex;
   flex-direction: column;
-
+  margin-right: 32px;
 }
 
-.large {
-  width: 630px;
-  display: flex;
-  flex-direction: column;
+.fall-cancelled.image-content {
+    background-image: url("img/img-story-2.png");
 }
 
-.medium {
+.pop-culture.image-content {
+    background-image: url("img/img-story-3.png");
+}
+
+.column.medium {
   width: 300px;
 }
 
-.small {
-  width: 240px;
+.column {
   display: flex;
   flex-direction: column;
+  margin-right: 32px;
+}
+
+.cat-ceo.image-content {
+    background-image: url("img/img-story-1.png");
+}
+
+.column.small {
+  width: 240px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+img.cookie {
+  height: 240px;
 }
 
 .news-bites h3 {
+  margin-bottom: 41px;
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 
-.bite {
+.news-bites .bite {
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
   background-color: WhiteSmoke;
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
 }
 
-.img-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 300px;
-  font-family: Georgia;
-  font-weight: bold;
-  color: white;
-}
-
-.lead-story .img-content {
-  background-image:url("img/img-story-main.png");
-  width: 630px;
-  margin-top: 0;
-  font-size: 40px;
-  text-align: left;
-}
-
-.lead-story .img-content span {
-  margin-left: 20px;
-}
-
-.narrative {
-  margin-top: 16px;
-}
-
-.fall-cancelled-image-content {
-  background-image:url("img/img-story-2.png");
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-.pop-culture-image-content {
-  background-image:url("img/img-story-3.png");
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-.cat-ceo-image-content {
-  background-image:url("img/img-story-1.png");
-  height: 300px;
-  margin-top: 15px;
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-
-.stories {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 17px;
-}
-
-.story {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-
-.stories .text-content {
-  height: 250px;
-}
-
 footer {
-  background-color: MediumAquamarine;
-  margin: auto;
-  font-family: Verdana;
-  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
 }
 
 footer .title {
@@ -202,4 +187,9 @@ footer .title {
 footer nav {
   display: inline-block;
   padding-left: 25px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
 }
